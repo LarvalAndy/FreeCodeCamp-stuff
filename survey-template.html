@@ -1,0 +1,180 @@
+<!DOCTYPE HTML>
+<style>
+		body {
+		min-height: 100vh;
+		background:linear-gradient(180deg, #FFF5F0, #DCFEFF);
+		}
+		#title {
+		font-size: 40px;
+		text-align: center;
+		}
+		hr {
+		color: white;
+		noshade;
+		width: 40vw;
+		}
+		.text {
+		color: #C2A8B3;
+		font-family: monospace;
+		font-size: 25px;
+		text-align: center;
+		}
+		.form-text {
+		color: #888098;
+		font-weight: bold;
+		font-size: 20px;
+		line-height: 2;
+		}
+		.form-input {
+		color: #292929;
+		font-family: monospace;
+		font-size: 16px;
+		width: 99%;
+		}
+		#survey-form {
+		display: absolute;
+		box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+		width: 50vw;
+		border: 1px solid white;
+		background-color: rgba(255,253,240,0.3);
+		border-radius: 5px;
+		margin: auto;
+		padding: 20px;
+		}
+		.clue{
+		color: #888098;
+		font-weight: thin;
+		font-size: 16px;
+		line-height: 2;
+		}
+		textarea {
+		min-height: 120px;
+		resize: vertical;
+		}
+		button {
+		margin-top: 40px;
+		margin-bottom:20px;
+		border: none;
+		background-color: #DFC2F2;
+		color: white;
+		font-size: 30px;
+		font-weight: bold;
+		height: 50px;
+		width: 100%;
+		}
+		button:hover {
+		background-color: #F3E1FF;
+		}
+		.stars {
+				background-color: white;
+				height: 10px;
+				width: 10px;
+				border-radius: 50%;
+				animation-iteration-count: infinite;
+				padding: 10px;
+		}
+		.star-1 {
+				margin-top: 15%;
+				margin-left: 80%;
+				animation-duration: 2s;
+				animation-name: twinkle;
+		}
+
+		.star-2 {
+				margin-top: 25%;
+				margin-left: 25%;
+				animation-duration: 0.9s;
+				animation-name: twinkle;
+		}
+
+		.star-3 {
+				margin-top: 10%;
+				margin-left: 10%;
+				animation-duration: 1.5s;
+				animation-name: twinkle;
+		}
+
+		@keyframes twinkle {
+				20% {
+				transform: scale(0.5);
+				opacity: 0.5;
+				}
+		}
+</style>
+<body>
+		<div class="star-3 stars"></div>
+		<h1 id="title" class="text">Fill Out This Survey</h1>
+		<hr>
+		<div class="star-2 stars"></div>
+
+		<p id="description" class="text">(if you want) <br>
+		it helps us improve the platform.
+		</p>
+		<div class="star-1 stars"></div>
+		<div class="star-3 stars"></div>
+		<form id="survey-form">
+		<div class="form-input">
+				<label id="name-label" class="form-text" for="name">Name<br></label>
+				<input type="text" name="name" id="name" class="form-input" placeholder="Enter Your Name" required>
+		</div>
+
+
+		<div class="form-input">
+				<label id="email-label" class="form-text" for="email">Email<br></label>
+				<input type="email" name="email" id="email" class="form-input" placeholder="Enter Your Email" required>
+		</div>
+
+		<div class="form-input">
+				<label id="number-label" class="form-text" for="number">Favorite Number<br></label>
+				<input type="number" name="number" id="number" class="form-input" min="-100000000000" max="100000000000" placeholder="Enter Your Favorite Number">
+		</div>
+
+		<div class="form-input">
+		<label class="form-text">Which of these directions do you prefer?</label>
+		<select id="dropdown" name="directions" class="form-input">
+				<option value="North">North</option>
+				<option value="East">East</option>
+				<option value="South">South</option>
+				<option value="West">West</option>
+				</select>
+		</div>
+
+		<div class="form-input">
+				<label class="form-text">Are you ready to rumble?<br></label>
+				<input name="rumble" type="radio" value="yes">
+				<label class="form-text">Yes</label>
+				<input name="rumble" type="radio" value="no">
+				<label class="form-text">No</label>
+		</div>
+
+
+		<div class="form-input">
+				<label class="form-text">Check every option below.</label>
+				<span class="clue">(Or just a few. Whatever you want.)<br><span>
+				<label class="form-text">
+				<input type="checkbox" value="a" name="check-option"> A<br>
+				</label>
+				<label class="form-text">
+				<input type="checkbox" value="b" name="check-option"> B<br>
+				</label>
+				<label class="form-text">
+				<input type="checkbox" value="c" name="check-option"> C<br>
+				</label>
+		</div>
+		<div class="form-input">
+				<label class="form-text">Any other inputs?</label>
+				<textarea id="comments" placeholder="Enter your comments here" class="form-input"></textarea>
+		</div>
+
+		<div class="form-input">
+		<button type="submit" id="submit">Submit</button>
+		</div>
+		</form>
+
+		<div class="star-1 stars"></div>
+		<div class="star-3 stars"></div>
+		<p id="description" class="text">Thanks for filling out the survey. <br></p>
+		<hr>
+		<div class="star-2 stars"></div>
+</body>
+</html>
