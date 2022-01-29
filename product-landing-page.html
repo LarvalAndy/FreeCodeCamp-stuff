@@ -1,0 +1,228 @@
+<!DOCTYPE HTML>
+<style>
+body{
+  min-width: 800px;
+  max-width: 100vw;
+  background: linear-gradient( #FDFAF1, #CFEAEA);
+  min-height: 100vh;
+}
+#header {
+  position: ;
+  display: flex;
+  width: 100vw;
+  min-width: 800px;
+  flex-direction: row;
+  background-color: #FE5F55;
+  padding: 2px;
+}
+.header-options {
+  display: flex;
+  flex-direction: row;
+}
+.nav-link {
+  font-size: 25px;
+  border-width: ;
+  border-style: ;
+  margin: auto;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+.name-logo {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  color: white;
+}
+#logo-container {
+  padding: 10px;
+}
+#logo {
+  background-color: white;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+}
+#name-container {
+  margin: auto
+}
+.super {
+  line-height: 0px;
+  font-size: 25px;
+  font-family: helvetica;
+}
+.product {
+  line-height: 0px;
+  font-size: 38px;
+  font-family: helvetica;
+}
+#about-us {
+  display: flex;
+  flex-direction: row;
+}
+.animated-div-right:hover {
+  animation-name: fade-in-right;
+  animation-duration: 1.5s;
+}
+.animated-div-left:hover {
+  animation-name: fade-in-left;
+  animation-duration: 1.5s;
+}
+.centering-text {
+  margin: auto;
+  min-width: 900px;
+  margin-left: 40px;
+}
+.decorative-circle {
+  background-color: #B8D8D8;
+  border-radius: 50%;
+  height: 70vw;
+  width: 70vw;
+  margin-left: -40vw;
+  min-height: 500px;
+  min-width: 500px;
+}
+.decorative-circle-right {
+  background-color: #FE5F55;
+  border-radius: 50%;
+  height: 50vw;
+  width: 50vw;
+  margin-left: 60vw;
+  min-height: 500px;
+  min-width: 500px;
+  margin-top: 20px;
+}
+#pricing{
+  display: flex;
+  flex-direction: row-reverse;
+
+}
+h1 {
+  font-family: monospace;
+  color: #4F6367;
+  font-size: 30px;
+  padding-left: 20px;
+}
+
+.dark-box {
+  color: #B8D8D8;
+  background-color: #4F6367;
+  align-items: center;
+  border-radius: 30px;
+  height: 300px;
+  width: 60vw;
+  padding: 30px;
+  min-width: 500px;
+}
+#not-header-super {
+  font-size: 60px;
+}
+#not-header {
+  font-size: 90px;
+}
+h2 {
+  font-weight: 600;
+  font-family: helvetica;
+  font-size: 30px
+}
+.text {
+  margin-left: 20px;
+  font-size: 20px;
+  font-weight: 100;
+  font-family: arial;
+  margin-bottom: 5%;
+}
+button {
+  margin-left: 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: #EEF5DB;
+  color: #4F6367;
+  width: 300px;
+  height: 40px;
+  font-size: 25px;
+  font-weight: 800;
+  font-family: arial;
+}
+button:hover{
+  background-color: #FE5F55;
+  color: #EEF5DB;
+  font-size: 25px;
+  font-weight: 800;
+  font-family: arial;
+}
+@keyframes fade-in-right {
+  0% {
+    margin-left: 100px;
+    opacity: 0;
+  }
+}
+@keyframes fade-in-left {
+  0% {
+    margin-right: 100px;
+    opacity: 0;
+  }
+}
+</style>
+
+<body>
+<header id="header">
+  <nav id="nav-bar" class="header-options">
+    <div class="nav-link">
+      <a href="#about-us">
+      <p>About Us</p>
+      </a>
+    </div>
+    <div class="nav-link">
+      <a href="#pricing">
+      <p>Pricing</p>
+      </a>
+    </div>
+    <div class="nav-link">
+      <a href="#contact-us">
+      <p>Contact Us</p>
+      </a>
+    </div>
+  </nav>
+  <nav class="name-logo">
+    <div id="logo-container">
+      <div id="logo">
+        <img id="header-img" src="">
+      </div>
+    </div>
+    <div id="name-container">
+      <p class="super">Super<br></p>
+      <p class="product">                    <strong>Email</strong></p>
+    </div>
+  </nav>
+</header>
+<div id="about-us">
+  <div class="decorative-circle"></div>
+  <div class="centering-text">
+    <h1>Say 'Hello' to a new world of email.</h1>
+    <div class="animated-div-right">
+    <div style="margin-left: 20px; color: #4F6367">
+        <p class="super" id="not-header-super">Super</p>
+        <p class="product" id="not-header"><strong>Email</strong></p>
+      </div>
+    <div class="dark-box">
+      <div class="text">
+      <h2>With SuperEmail, anything is possible. </h2>
+        <p>We offer affordable, high-quality packages in a user-friendly interface. <br><br><br><strong>Take your email to the next level.</strong></p>
+    </div>
+      <button>Sign Up</button>
+    </div>
+    </div>
+  </div>
+</div>
+<div id="pricing">
+  <div class="animated-div-left">
+  </div>
+  <div class="decorative-circle-right"></div>
+</div>
+</body>
+</html>
