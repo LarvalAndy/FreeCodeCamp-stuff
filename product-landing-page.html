@@ -1,14 +1,20 @@
 <!DOCTYPE HTML>
 <style>
 body{
-  min-width: 800px;
-  max-width: 100vw;
+  max-width: 99vw;
   background: linear-gradient( #FDFAF1, #CFEAEA);
   min-height: 100vh;
 }
+@media (max-width: 1300px){
+  .buffer {
+  height: 250px;
+}
+}
+
 #header {
-  position: ;
+  position: fixed;
   display: flex;
+  float;
   width: 100vw;
   min-width: 800px;
   flex-direction: row;
@@ -64,14 +70,16 @@ a {
   display: flex;
   flex-direction: row;
 }
+#contact-us {
+  display: flex;
+  flex-direction: row;
+}
+/*
 .animated-div-right:hover {
   animation-name: fade-in-right;
   animation-duration: 1.5s;
 }
-.animated-div-left:hover {
-  animation-name: fade-in-left;
-  animation-duration: 1.5s;
-}
+*/
 .centering-text {
   margin: auto;
   min-width: 900px;
@@ -86,20 +94,27 @@ a {
   min-height: 500px;
   min-width: 500px;
 }
-.decorative-circle-right {
+.decorative-circle-red {
   background-color: #FE5F55;
   border-radius: 50%;
-  height: 50vw;
-  width: 50vw;
-  margin-left: 60vw;
+  height: 70vw;
+  width: 70vw;
+  margin-left: -40vw;
   min-height: 500px;
   min-width: 500px;
-  margin-top: 20px;
+}
+.decorative-circle-beige {
+  background-color: #FDFAF1;
+  border-radius: 50%;
+  height: 70vw;
+  width: 70vw;
+  margin-left: -40vw;
+  min-height: 500px;
+  min-width: 500px;
 }
 #pricing{
   display: flex;
-  flex-direction: row-reverse;
-
+  flex-direction: row;
 }
 h1 {
   font-family: monospace;
@@ -136,6 +151,32 @@ h2 {
   font-family: arial;
   margin-bottom: 5%;
 }
+#form {
+  display: flex;
+  flex-direction: column;
+}
+#email {
+  margin-left: 20px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 10px;
+  color: #4F6367;
+  width: 300px;
+  height: 40px;
+  font-family: arial;
+}
+#submit {
+  margin-left: 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: #EEF5DB;
+  color: #4F6367;
+  width: 300px;
+  height: 40px;
+  font-size: 25px;
+  font-weight: 800;
+  font-family: arial;
+}
 button {
   margin-left: 20px;
   border: none;
@@ -148,6 +189,13 @@ button {
   font-weight: 800;
   font-family: arial;
 }
+#submit:hover{
+  background-color: #FE5F55;
+  color: #EEF5DB;
+  font-size: 25px;
+  font-weight: 800;
+  font-family: arial;
+}
 button:hover{
   background-color: #FE5F55;
   color: #EEF5DB;
@@ -155,6 +203,12 @@ button:hover{
   font-weight: 800;
   font-family: arial;
 }
+.dark-circle {
+  display: flex;
+  border-radius: 50%;
+  height: 50vw;
+}
+
 @keyframes fade-in-right {
   0% {
     margin-left: 100px;
@@ -172,21 +226,17 @@ button:hover{
 <body>
 <header id="header">
   <nav id="nav-bar" class="header-options">
-    <div class="nav-link">
-      <a href="#about-us">
-      <p>About Us</p>
+     <a class="nav-link" href="#about-us">
+     About Us
+     </a>
+
+    <a class="nav-link" href="#pricing">
+      Pricing
       </a>
-    </div>
-    <div class="nav-link">
-      <a href="#pricing">
-      <p>Pricing</p>
+    <a class="nav-link" href="#contact-us">
+      Contact Us
       </a>
-    </div>
-    <div class="nav-link">
-      <a href="#contact-us">
-      <p>Contact Us</p>
-      </a>
-    </div>
+
   </nav>
   <nav class="name-logo">
     <div id="logo-container">
@@ -200,6 +250,7 @@ button:hover{
     </div>
   </nav>
 </header>
+<div class="buffer"></div>
 <div id="about-us">
   <div class="decorative-circle"></div>
   <div class="centering-text">
@@ -210,26 +261,53 @@ button:hover{
         <p class="product" id="not-header"><strong>Email</strong></p>
       </div>
     <div class="dark-box">
-				<div class="text">
+      <div class="text">
       <h2>With SuperEmail, anything is possible. </h2>
         <p>We offer affordable, high-quality packages in a user-friendly interface. <br><br><br><strong>Take your email to the next level.</strong></p>
-				</div>
+    </div>
       <button>Sign Up</button>
     </div>
     </div>
   </div>
 </div>
 <div id="pricing">
-  <div class="animated-div-left">
-  <div class="dark-box">
-				<div class="text">
-      <h2>With SuperEmail, anything is possible. </h2>
-        <p>We offer affordable, high-quality packages in a user-friendly interface. <br><br><br><strong>Take your email to the next level.</strong></p>
-				</div>
-      <button>Sign Up</button>
+  <div class="decorative-circle-red"></div>
+  <div class="centering-text">
+    <h1>No need to worry about finances.</h1>
+    <div class="animated-div-right">
+    <div class="dark-box">
+      <div class="text">
+      <h2>Email for the low price of free... </h2>
+        <p>or the $5/mo premium package.<br><br><br><strong>See what all the fuss is about.</strong></p>
+    </div>
+      <button>More Info</button>
+    </div>
     </div>
   </div>
-  <div class="decorative-circle-right"></div>
+</div>
+<div id="contact-us">
+  <div class="decorative-circle-beige"></div>
+  <div class="centering-text">
+    <h1>Let us know what's on your mind.</h1>
+    <div class="animated-div-right">
+    <div class="dark-box">
+      <div class="text">
+      <h2>We're here to listen. </h2>
+        <p><br><strong>Give us your email address and we will get back to you.</strong></p>
+    </div>
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
+      <input name="email" id="email" type="email" placeholder="Enter your email address" required="">
+      <input id="submit" type="submit" value="Submit" class="btn">
+    </form>
+    </div>
+    </div>
+  </div>
+</div>
+<div class="dark-circle">
+  <video id="video" controls>
+    <source src="movie.mp4" type="video/mp4">
+    <source src="movie.ogg" type="video/ogg">
+  </video>
 </div>
 </body>
 </html>
