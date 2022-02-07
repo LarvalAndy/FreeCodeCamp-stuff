@@ -1,37 +1,161 @@
 <!DOCTYPE HTML>
+<style>
+body {
+  background-color: black;
+  color: white;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  height: 80vh;
+  position: fixed;
+}
+#navbar {
+  padding: 20px;
+  border: solid;
+  border-width: 1px;
+  border-color: grey;
+  max-width: 20vw;
+}
+#main-doc {
+  margin: 40px;
+  margin-left: 20vw;
+
+}
+header {
+  font-size: 30px;
+}
+.nav-link {
+  font-size: 20px;
+  margin: 10px;
+  text-align: center;
+}
+@media (max-width: 1000px){
+  #navbar {
+  padding: 20px;
+  border: solid;
+  border-width: 1px;
+  border-color: grey;
+  max-width: 20vw;
+}
+#main-doc {
+  margin: 40px;
+  margin-left: 40vw;
+  max-width: 60vw;
+
+}
+}
+</style>
 <body>
-<nav id="navbar">
+<div class="row">
+<nav id="navbar" class="column" >
 		<header>Main Topic</header>
-		<a class="nav-link">Topic 1</a>
-		<a class="nav-link">Topic 2</a>
-		<a class="nav-link">Topic 3</a>
-		<a class="nav-link">Topic 4</a>
-		<a class="nav-link">Topic 5</a>
+		<a class="nav-link" href="#Topic_1">Topic 1</a>
+		<a class="nav-link" href="#Topic_2">Topic 2</a>
+		<a class="nav-link" href="#Topic_3">Topic 3</a>
+		<a class="nav-link" href="#Topic_4">Topic 4</a>
+		<a class="nav-link" href="#Topic_5">Topic 5</a>
 </nav>
 <main id="main-doc">
   <section id="Topic_1" class="main-section">
 		<header>Topic 1</header>
-		<p></p>
-		<code></code>
-		<p></p>
+		<p>
+		  Lorem ipsum dolor sit amet. Quo aliquid voluptatum quo dolorum dicta aut consequatur esse non nihil nihil et fuga consequatur aut eveniet rerum qui facere obcaecati. Aut porro Quis aut quia consequuntur ad sunt atque non veritatis ipsam est voluptatibus doloremque ut nemo natus et veritatis dolorem. In neque et Quis unde eos repellendus galisum ut molestiae repellat eos fugiat velit rem nisi perferendis. Sed vitae accusamus et odit maxime est dignissimos recusandae non modi dolore sit fugiat ullam. Qui temporibus nobis sit tenetur nobis non dolor accusantium nam aliquam quia est voluptate vitae?
+      <br>
+
+Quo Quis soluta aut voluptate deserunt ea exercitationem deserunt id nisi voluptatibus et tempora vero sed modi explicabo et culpa provident. Est tenetur veritatis et porro consequatur ut enim accusantium et commodi excepturi. A sequi minima ut perferendis ipsam et velit dolore et perspiciatis reprehenderit. Aut voluptates asperiores sed harum officiis non quia neque sit cupiditate illum et enim sunt. Et animi aliquid ad iure magnam sed rerum labore qui quidem inventore est quis nulla cum sunt amet.
+      <br>
+
+Quo consectetur tempore et omnis dolorum sit nobis aliquid aut sunt delectus qui nulla magnam aut eaque optio. Et expedita recusandae sit aliquam ipsum et ullam voluptate non cupiditate repellendus quo rerum quia est expedita iusto. Et impedit recusandae et iusto consequatur hic ducimus eveniet est debitis voluptatem qui voluptatum totam! Ut dicta dolorem sit enim quibusdam ea reiciendis sunt quo odio sint? Qui galisum praesentium in dolores voluptatem sit voluptatem iure. Non laudantium nisi ut voluptas fuga aut tempore reprehenderit eos molestias natus. Eos unde cumque eos explicabo saepe ut quia voluptatibus. Et repellat omnis non ullam maxime ea nihil quas vel similique blanditiis ut provident consectetur quo voluptas dolorem qui dolorem expedita. Eos veniam labore eos doloribus molestiae a debitis accusamus vel facere numquam qui pariatur officia id molestias deserunt?
+		</p>
+		<code>
+		  var num= 4;<br>
+      newnum = num + 8;
+		</code>
+		<p>
+		  Lorem ipsum dolor sit amet. Quo aliquid voluptatum quo dolorum dicta aut consequatur esse non nihil nihil et fuga consequatur aut eveniet rerum qui facere obcaecati. Aut porro Quis aut quia consequuntur ad sunt atque non veritatis ipsam est voluptatibus doloremque ut nemo natus et veritatis dolorem. In neque et Quis unde eos repellendus galisum ut molestiae repellat eos fugiat velit rem nisi perferendis. Sed vitae accusamus et odit maxime est dignissimos recusandae non modi dolore sit fugiat ullam. Qui temporibus nobis sit tenetur nobis non dolor accusantium nam aliquam quia est voluptate vitae?
+      <br>
+
+Quo Quis soluta aut voluptate deserunt ea exercitationem deserunt id nisi voluptatibus et tempora vero sed modi explicabo et culpa provident. Est tenetur veritatis et porro consequatur ut enim accusantium et commodi excepturi. A sequi minima ut perferendis ipsam et velit dolore et perspiciatis reprehenderit. Aut voluptates asperiores sed harum officiis non quia neque sit cupiditate illum et enim sunt. Et animi aliquid ad iure magnam sed rerum labore qui quidem inventore est quis nulla cum sunt amet.
+      <br>
+
+Quo consectetur tempore et omnis dolorum sit nobis aliquid aut sunt delectus qui nulla magnam aut eaque optio. Et expedita recusandae sit aliquam ipsum et ullam voluptate non cupiditate repellendus quo rerum quia est expedita iusto. Et impedit recusandae et iusto consequatur hic ducimus eveniet est debitis voluptatem qui voluptatum totam! Ut dicta dolorem sit enim quibusdam ea reiciendis sunt quo odio sint? Qui galisum praesentium in dolores voluptatem sit voluptatem iure. Non laudantium nisi ut voluptas fuga aut tempore reprehenderit eos molestias natus. Eos unde cumque eos explicabo saepe ut quia voluptatibus. Et repellat omnis non ullam maxime ea nihil quas vel similique blanditiis ut provident consectetur quo voluptas dolorem qui dolorem expedita. Eos veniam labore eos doloribus molestiae a debitis accusamus vel facere numquam qui pariatur officia id molestias deserunt?
+		</p>
   </section>
   <section id="Topic_2" class="main-section">
 		<header>Topic 2</header>
-		<p></p>
-		<code></code>
-		<p></p>
+		<p>
+		  Lorem ipsum dolor sit amet. Quo aliquid voluptatum quo dolorum dicta aut consequatur esse non nihil nihil et fuga consequatur aut eveniet rerum qui facere obcaecati. Aut porro Quis aut quia consequuntur ad sunt atque non veritatis ipsam est voluptatibus doloremque ut nemo natus et veritatis dolorem. In neque et Quis unde eos repellendus galisum ut molestiae repellat eos fugiat velit rem nisi perferendis. Sed vitae accusamus et odit maxime est dignissimos recusandae non modi dolore sit fugiat ullam. Qui temporibus nobis sit tenetur nobis non dolor accusantium nam aliquam quia est voluptate vitae?
+      <br>
+
+Quo Quis soluta aut voluptate deserunt ea exercitationem deserunt id nisi voluptatibus et tempora vero sed modi explicabo et culpa provident. Est tenetur veritatis et porro consequatur ut enim accusantium et commodi excepturi. A sequi minima ut perferendis ipsam et velit dolore et perspiciatis reprehenderit. Aut voluptates asperiores sed harum officiis non quia neque sit cupiditate illum et enim sunt. Et animi aliquid ad iure magnam sed rerum labore qui quidem inventore est quis nulla cum sunt amet.
+      <br>
+
+Quo consectetur tempore et omnis dolorum sit nobis aliquid aut sunt delectus qui nulla magnam aut eaque optio. Et expedita recusandae sit aliquam ipsum et ullam voluptate non cupiditate repellendus quo rerum quia est expedita iusto. Et impedit recusandae et iusto consequatur hic ducimus eveniet est debitis voluptatem qui voluptatum totam! Ut dicta dolorem sit enim quibusdam ea reiciendis sunt quo odio sint? Qui galisum praesentium in dolores voluptatem sit voluptatem iure. Non laudantium nisi ut voluptas fuga aut tempore reprehenderit eos molestias natus. Eos unde cumque eos explicabo saepe ut quia voluptatibus. Et repellat omnis non ullam maxime ea nihil quas vel similique blanditiis ut provident consectetur quo voluptas dolorem qui dolorem expedita. Eos veniam labore eos doloribus molestiae a debitis accusamus vel facere numquam qui pariatur officia id molestias deserunt?
+		</p>
+		<code>
+		  if (num === 3) {<br>
+        system.put.println("num is 3");
+      }
+		</code>
+		<p>
+Quo consectetur tempore et omnis dolorum sit nobis aliquid aut sunt delectus qui nulla magnam aut eaque optio. Et expedita recusandae sit aliquam ipsum et ullam voluptate non cupiditate repellendus quo rerum quia est expedita iusto. Et impedit recusandae et iusto consequatur hic ducimus eveniet est debitis voluptatem qui voluptatum totam! Ut dicta dolorem sit enim quibusdam ea reiciendis sunt quo odio sint? Qui galisum praesentium in dolores voluptatem sit voluptatem iure. Non laudantium nisi ut voluptas fuga aut tempore reprehenderit eos molestias natus. Eos unde cumque eos explicabo saepe ut quia voluptatibus. Et repellat omnis non ullam maxime ea nihil quas vel similique blanditiis ut provident consectetur quo voluptas dolorem qui dolorem expedita. Eos veniam labore eos doloribus molestiae a debitis accusamus vel facere numquam qui pariatur officia id molestias deserunt?
+		</p>
   </section>
   <section id="Topic_3" class="main-section">
 		<header>Topic 3</header>
-		<p></p>
-		<code></code>
-		<p></p>
+		<p>
+		  Lorem ipsum dolor sit amet. Quo aliquid voluptatum quo dolorum dicta aut consequatur esse non nihil nihil et fuga consequatur aut eveniet rerum qui facere obcaecati. Aut porro Quis aut quia consequuntur ad sunt atque non veritatis ipsam est voluptatibus doloremque ut nemo natus et veritatis dolorem. In neque et Quis unde eos repellendus galisum ut molestiae repellat eos fugiat velit rem nisi perferendis. Sed vitae accusamus et odit maxime est dignissimos recusandae non modi dolore sit fugiat ullam. Qui temporibus nobis sit tenetur nobis non dolor accusantium nam aliquam quia est voluptate vitae?
+      <br>
+
+Quo Quis soluta aut voluptate deserunt ea exercitationem deserunt id nisi voluptatibus et tempora vero sed modi explicabo et culpa provident. Est tenetur veritatis et porro consequatur ut enim accusantium et commodi excepturi. A sequi minima ut perferendis ipsam et velit dolore et perspiciatis reprehenderit. Aut voluptates asperiores sed harum officiis non quia neque sit cupiditate illum et enim sunt. Et animi aliquid ad iure magnam sed rerum labore qui quidem inventore est quis nulla cum sunt amet.
+      <br>
+
+Quo consectetur tempore et omnis dolorum sit nobis aliquid aut sunt delectus qui nulla magnam aut eaque optio. Et expedita recusandae sit aliquam ipsum et ullam voluptate non cupiditate repellendus quo rerum quia est expedita iusto. Et impedit recusandae et iusto consequatur hic ducimus eveniet est debitis voluptatem qui voluptatum totam! Ut dicta dolorem sit enim quibusdam ea reiciendis sunt quo odio sint? Qui galisum praesentium in dolores voluptatem sit voluptatem iure. Non laudantium nisi ut voluptas fuga aut tempore reprehenderit eos molestias natus. Eos unde cumque eos explicabo saepe ut quia voluptatibus. Et repellat omnis non ullam maxime ea nihil quas vel similique blanditiis ut provident consectetur quo voluptas dolorem qui dolorem expedita. Eos veniam labore eos doloribus molestiae a debitis accusamus vel facere numquam qui pariatur officia id molestias deserunt?
+		</p>
+		<code>
+		  else {<br>
+        return null;
+      }
+		</code>
+		<p>
+		  Lorem ipsum dolor sit amet. Quo aliquid voluptatum quo dolorum dicta aut consequatur esse non nihil nihil et fuga consequatur aut eveniet rerum qui facere obcaecati. Aut porro Quis aut quia consequuntur ad sunt atque non veritatis ipsam est voluptatibus doloremque ut nemo natus et veritatis dolorem. In neque et Quis unde eos repellendus galisum ut molestiae repellat eos fugiat velit rem nisi perferendis. Sed vitae accusamus et odit maxime est dignissimos recusandae non modi dolore sit fugiat ullam. Qui temporibus nobis sit tenetur nobis non dolor accusantium nam aliquam quia est voluptate vitae?
+      <br>
+
+Quo Quis soluta aut voluptate deserunt ea exercitationem deserunt id nisi voluptatibus et tempora vero sed modi explicabo et culpa provident. Est tenetur veritatis et porro consequatur ut enim accusantium et commodi excepturi. A sequi minima ut perferendis ipsam et velit dolore et perspiciatis reprehenderit. Aut voluptates asperiores sed harum officiis non quia neque sit cupiditate illum et enim sunt. Et animi aliquid ad iure magnam sed rerum labore qui quidem inventore est quis nulla cum sunt amet.
+      <br>
+
+Quo consectetur tempore et omnis dolorum sit nobis aliquid aut sunt delectus qui nulla magnam aut eaque optio. Et expedita recusandae sit aliquam ipsum et ullam voluptate non cupiditate repellendus quo rerum quia est expedita iusto. Et impedit recusandae et iusto consequatur hic ducimus eveniet est debitis voluptatem qui voluptatum totam! Ut dicta dolorem sit enim quibusdam ea reiciendis sunt quo odio sint? Qui galisum praesentium in dolores voluptatem sit voluptatem iure. Non laudantium nisi ut voluptas fuga aut tempore reprehenderit eos molestias natus. Eos unde cumque eos explicabo saepe ut quia voluptatibus. Et repellat omnis non ullam maxime ea nihil quas vel similique blanditiis ut provident consectetur quo voluptas dolorem qui dolorem expedita. Eos veniam labore eos doloribus molestiae a debitis accusamus vel facere numquam qui pariatur officia id molestias deserunt?
+		</p>
   </section>
   <section id="Topic_4" class="main-section">
 		<header>Topic 4</header>
-		<p></p>
-		<code></code>
-		<p></p>
+		<p>
+		  Lorem ipsum dolor sit amet. Quo aliquid voluptatum quo dolorum dicta aut consequatur esse non nihil nihil et fuga consequatur aut eveniet rerum qui facere obcaecati. Aut porro Quis aut quia consequuntur ad sunt atque non veritatis ipsam est voluptatibus doloremque ut nemo natus et veritatis dolorem. In neque et Quis unde eos repellendus galisum ut molestiae repellat eos fugiat velit rem nisi perferendis. Sed vitae accusamus et odit maxime est dignissimos recusandae non modi dolore sit fugiat ullam. Qui temporibus nobis sit tenetur nobis non dolor accusantium nam aliquam quia est voluptate vitae?
+      <br>
+
+Quo Quis soluta aut voluptate deserunt ea exercitationem deserunt id nisi voluptatibus et tempora vero sed modi explicabo et culpa provident. Est tenetur veritatis et porro consequatur ut enim accusantium et commodi excepturi. A sequi minima ut perferendis ipsam et velit dolore et perspiciatis reprehenderit. Aut voluptates asperiores sed harum officiis non quia neque sit cupiditate illum et enim sunt. Et animi aliquid ad iure magnam sed rerum labore qui quidem inventore est quis nulla cum sunt amet.
+      <br>
+
+Quo consectetur tempore et omnis dolorum sit nobis aliquid aut sunt delectus qui nulla magnam aut eaque optio. Et expedita recusandae sit aliquam ipsum et ullam voluptate non cupiditate repellendus quo rerum quia est expedita iusto. Et impedit recusandae et iusto consequatur hic ducimus eveniet est debitis voluptatem qui voluptatum totam! Ut dicta dolorem sit enim quibusdam ea reiciendis sunt quo odio sint? Qui galisum praesentium in dolores voluptatem sit voluptatem iure. Non laudantium nisi ut voluptas fuga aut tempore reprehenderit eos molestias natus. Eos unde cumque eos explicabo saepe ut quia voluptatibus. Et repellat omnis non ullam maxime ea nihil quas vel similique blanditiis ut provident consectetur quo voluptas dolorem qui dolorem expedita. Eos veniam labore eos doloribus molestiae a debitis accusamus vel facere numquam qui pariatur officia id molestias deserunt?
+		</p>
+		<code>
+		  while ( 1 === 1){<br>
+       print("this is an infinite loop");
+      }
+		</code>
+		<p>Lorem ipsum dolor sit amet. Quo aliquid voluptatum quo dolorum dicta aut consequatur esse non nihil nihil et fuga consequatur aut eveniet rerum qui facere obcaecati. Aut porro Quis aut quia consequuntur ad sunt atque non veritatis ipsam est voluptatibus doloremque ut nemo natus et veritatis dolorem. In neque et Quis unde eos repellendus galisum ut molestiae repellat eos fugiat velit rem nisi perferendis. Sed vitae accusamus et odit maxime est dignissimos recusandae non modi dolore sit fugiat ullam. Qui temporibus nobis sit tenetur nobis non dolor accusantium nam aliquam quia est voluptate vitae?
+      <br>
+
+Quo Quis soluta aut voluptate deserunt ea exercitationem deserunt id nisi voluptatibus et tempora vero sed modi explicabo et culpa provident. Est tenetur veritatis et porro consequatur ut enim accusantium et commodi excepturi. A sequi minima ut perferendis ipsam et velit dolore et perspiciatis reprehenderit. Aut voluptates asperiores sed harum officiis non quia neque sit cupiditate illum et enim sunt. Et animi aliquid ad iure magnam sed rerum labore qui quidem inventore est quis nulla cum sunt amet.
+      <br>
+
+Quo consectetur tempore et omnis dolorum sit nobis aliquid aut sunt delectus qui nulla magnam aut eaque optio. Et expedita recusandae sit aliquam ipsum et ullam voluptate non cupiditate repellendus quo rerum quia est expedita iusto. Et impedit recusandae et iusto consequatur hic ducimus eveniet est debitis voluptatem qui voluptatum totam! Ut dicta dolorem sit enim quibusdam ea reiciendis sunt quo odio sint? Qui galisum praesentium in dolores voluptatem sit voluptatem iure. Non laudantium nisi ut voluptas fuga aut tempore reprehenderit eos molestias natus. Eos unde cumque eos explicabo saepe ut quia voluptatibus. Et repellat omnis non ullam maxime ea nihil quas vel similique blanditiis ut provident consectetur quo voluptas dolorem qui dolorem expedita. Eos veniam labore eos doloribus molestiae a debitis accusamus vel facere numquam qui pariatur officia id molestias deserunt?</p>
   </section>
   <section id="Topic_5" class="main-section">
 		<header>Topic 5</header>
@@ -47,5 +171,6 @@
 		</ol>
   </section>
 </main>
+</div>
 </body>
 </HTML>
