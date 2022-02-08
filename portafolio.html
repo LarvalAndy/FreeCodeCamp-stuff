@@ -6,60 +6,75 @@
   </head>
   <style>
 				body {
-				background-color: black;
-				font-family: inconsolata;
+						background-image: url("img/near-black-spikes-allec-gomes.jpg");
+						background-color: black;
+						font-family: inconsolata;
+						background-position: bottom;
+						background-size: 150vw;
+						background-repeat: no-repeat;
 				}
 				#welcome-section {
-				height: 100vh;
-				display: flex;
-				align-items: center;
-				justify-content: center;
-				color: white;
-				font-family: inconsolata;
+						height: 100vh;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						color: white;
+						font-family: inconsolata;
 				}
 				#navbar {
-				position: fixed;
-				padding: 20px;
+						position: fixed;
+						padding: 20px;
 				}
 				p {
-				font-size: 20px;
+						font-size: 20px;
 				}
 				.navtab {
-				margin: 10px;
+						margin: 10px;
 				}
 				.hr {
-				margin: auto;
-				border-top: 1px solid #368F8B;
-				width: 90vw;
+						margin: auto;
+						border-top: 1px solid #368F8B;
+						width: 90vw;
 				}
 				a {
-				text-decoration: none;
-				color: white;
+						text-decoration: none;
+						color: white;
 				}
 				a:hover {
-				animation-name: hover;
-				animation-duration: 1s;
-				animation-fill-mode: forwards;
+						animation-name: hover;
+						animation-duration: 1s;
+						animation-fill-mode: forwards;
 				}
 				#welcome-text {
-				text-align: center;
+						text-align: center;
 				}
 				#projects {
-				margin-top: 80px;
-				display: flex;
-				flex-wrap: wrap;
-				flex-direction: row;
-				justify-content: space-evenly;
+						margin-top: 80px;
+						display: flex;
+						flex-wrap: wrap;
+						flex-direction: row;
+						justify-content: space-evenly;
 				}
 				.project-tile {
-				display: flex;
-				align-items: center;
-				justify-content: center;
-				border: 1px solid white;
-				border-radius: 50%;
-				height: 40vh;
-				width: 40vh;
-				margin: 20px;
+						position: relative;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						height: 40vh;
+						width: 40vh;
+						margin: 20px;
+				}
+				.circle {
+						position: absolute;
+						z-index: -1;
+						border-radius: 50%;
+						height: 40vh;
+						width: 40vh;
+				}
+				.circle:hover {
+						animation-name: circle-anim;
+						animation-duration: 1.5s;
+						animation-fill-mode: forwards;
 				}
 				div.project-tile > a {
 				margin: auto;
@@ -78,15 +93,62 @@
 						color: #368F8B;
 				}
 				}
+				@keyframes circle-anim {
+				0% {
+						height: 0vh;
+						width: 0vh;
+				}
+				25% {
+						height: 10vh;
+						width: 5vh;
+						border: 1px solid grey;
+				}
+				50% {
+						height: 20vh;
+						width: 20vh;
+						border: 1px solid grey;
+				}
+				75% {
+						height: 30vh;
+						width: 25vh;
+						border: 1px solid grey;
+				}
+				100% {
+						height: 40vh;
+						width: 40vh;
+						border: 1px solid grey;
+						background-color: blue;
+				}
+				}
+				@media (min-width: 1000px) {
+						body {
+								background-image: url("img/near-black-spikes-allec-gomes.jpg");
+								background-color: black;
+								font-family: inconsolata;
+								background-position: bottom;
+								background-size: 100vw;
+								background-repeat: no-repeat;
+						}
+				}
+				@media (min-width: 1300px) {
+						body {
+								background-image: url("img/near-black-spikes-allec-gomes.jpg");
+								background-color: black;
+								font-family: inconsolata;
+								background-position: top;
+								background-size: 100vw;
+								background-repeat: no-repeat;
+						}
+				}
   </style>
   <body>
     <header>
     </header>
     <main>
-						<navbar id="navbar">
-				<a class="navtab" href="#projects">Projects</a>
-				<a class="navtab" href="#contact">Contact</a>
-				<a class="navtab" href="https://github.com/" target="_blank" id="profile-link">GitHub</a>
+				<navbar id="navbar">
+						<a class="navtab" href="#projects">Projects</a>
+						<a class="navtab" href="#contact">Contact</a>
+						<a class="navtab" href="https://github.com/LarvalAndy" target="_blank" id="profile-link">GitHub</a>
 				</navbar>
 				<div id="welcome-section">
 				<div id="welcome-text">
@@ -94,9 +156,9 @@
 						<p>this is my website</p>
 				</div>
 				</div>
-				<div class="hr"></div>
 				<div id="projects">
 				<div class="project-tile">
+						<div class="circle"></div>
 						<a href="">project</a>
 				</div>
 				<div class="project-tile">
@@ -119,8 +181,11 @@
     <footer>
 
 				<div id="contact">
-				<div>
+				<div style="text-align: center;">
 						<p>email: sdaghdhg@email.com</p>
+						<p>photo from:
+								<a href="https://unsplash.com/@allecgomes" target="_blank">https://unsplash.com/@allecgomes</a>
+						</p>
 				</div>
 				</div>
     </footer>
