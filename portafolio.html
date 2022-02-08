@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <style>
+				body {
+				background-color: black;
+				font-family: inconsolata;
+				}
+				#welcome-section {
+				height: 100vh;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				color: white;
+				font-family: inconsolata;
+				}
+				#navbar {
+				position: fixed;
+				padding: 20px;
+				}
+				p {
+				font-size: 20px;
+				}
+				.navtab {
+				margin: 10px;
+				}
+				.hr {
+				margin: auto;
+				border-top: 1px solid #368F8B;
+				width: 90vw;
+				}
+				a {
+				text-decoration: none;
+				color: white;
+				}
+				a:hover {
+				animation-name: hover;
+				animation-duration: 1s;
+				animation-fill-mode: forwards;
+				}
+				#welcome-text {
+				text-align: center;
+				}
+				#projects {
+				margin-top: 80px;
+				display: flex;
+				flex-wrap: wrap;
+				flex-direction: row;
+				justify-content: space-evenly;
+				}
+				.project-tile {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				border: 1px solid white;
+				border-radius: 50%;
+				height: 40vh;
+				width: 40vh;
+				margin: 20px;
+				}
+				div.project-tile > a {
+				margin: auto;
+				text-align: center;
+				}
+				#contact {
+				height: 20vh;
+				color: white;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				}
+				@keyframes hover {
+				100% {
+						text-decoration: underline;
+						color: #368F8B;
+				}
+				}
+  </style>
+  <body>
+    <header>
+    </header>
+    <main>
+						<navbar id="navbar">
+				<a class="navtab" href="#projects">Projects</a>
+				<a class="navtab" href="#contact">Contact</a>
+				<a class="navtab" href="https://github.com/" target="_blank" id="profile-link">GitHub</a>
+				</navbar>
+				<div id="welcome-section">
+				<div id="welcome-text">
+						<h1 >Welcome, I am Andy</h1>
+						<p>this is my website</p>
+				</div>
+				</div>
+				<div class="hr"></div>
+				<div id="projects">
+				<div class="project-tile">
+						<a href="">project</a>
+				</div>
+				<div class="project-tile">
+						<a href="">project</a>
+				</div>
+				<div class="project-tile">
+						<a href="">project</a>
+				</div>
+				<div class="project-tile">
+						<a href="">project</a>
+				</div>
+				<div class="project-tile">
+						<a href="">project</a>
+				</div>
+				<div class="project-tile">
+						<a href="">project</a>
+				</div>
+				</div>
+    </main>
+    <footer>
+
+				<div id="contact">
+				<div>
+						<p>email: sdaghdhg@email.com</p>
+				</div>
+				</div>
+    </footer>
+  </body>
+</html>
